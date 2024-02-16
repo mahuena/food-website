@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scaled=1.0">
+    <title>Food_website</title>
+
+    <!--link style-->
+    <link rel="stylesheet" href="style.css">
+    <!--link font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!--poppins-font-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <!--logo-->
+        <div class="logo">
+            <img src="pictures/logo.png">
+        </div>
+
+        <!--navbar-->
+        <div class="navbar" id="navbar">
+            <div class="content">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#galery">Galery</a></li>
+                    <li><a href="#review">Review</a></li>
+                    <li><a href="#order">Order</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+    
+            <!--icons-->
+            <div class="icon">
+                <!--heart-->
+                <i class="fa-solid fa-heart"></i>
+                <!--cart-->
+                <i class="fa-solid fa-cart-shopping"></i>
+                <!--search-->
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="javascript:void(0);" class="icon-menu" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+            </div>
+        </div>
+    </nav> <!--nav-end-->
+    <div class="content1" id="content1">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#galery">Galery</a></li>
+            <li><a href="#review">Review</a></li>
+            <li><a href="#order">Order</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- section main-->
+    <section class="main" id="home">
+        <!--main-text-->
+        <div class="main-text">
+            <!--title-->
+            <h1> Empowering Your <span>Foodie</span> Spirit</h1>
+            <!--caption-->
+            <p>"We all eat, and it would be a sad waste of opportunity to eat badly."</p>
+            <span>- Anna Thomas</span>
+            <!--btn-->
+            <div class="main-btn">
+                <a href="#">Order Now</a>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+        <!--main-image-->
+        <div class="main-img">
+            <img src="pictures/img-main.png">
+        </div>
+    </section><!--main-end-->
+
+
+    <!--About-->
+    <section class="about" id="about">
+        <!--title-->
+        <div class="title">
+            <h1><span>About Us</span></h1>
+        </div>
+        <!--main-about-->
+        <div class="about-main">
+            <!--img-->
+            <div class="img">
+                <img src="pictures/Food-Plate.png" alt="">
+            </div>
+            <!--text-->
+            <div class="about-text">
+                <h3>Why Choose us?</h3>
+                <p>Focusing on quality, Food Fantasy brings only the best products to Africa from around the World. "All our products are made with prime ingredients that are selected with care by our renowned partner brands"
+                    <br><br> Food Fantasy has a strong commitment to health and nutrition, therefore it only distributes foodstuff manufactured with very few or none additives. This approach helps to preserve traditional recipes and to safeguard customer’s health.
+                    Our partners have up to 120 years of rich know-how. They all have a strong collaboration with renowned Chefs to create special products that respect traditional recipes. 
+                    <br><br> Thanks to these close relations our products impress by their natural and authentic taste.</p>
+
+                <!--btn-->
+                <div class="btn">
+                <a href="#" class="about-btn">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </section><!--about-end-->
+
+
+    <!--Menu-->
+    <section class="menu" id="menu">
+        <!--title-->
+        <div class="title">
+            <h1><span>Our Menu</span></h1>
+        </div>
+
+        <!--filter-list-->
+        <div class="filter-list">
+            <ul>
+                <li class="filter-list active" data-filter="all">All</li>
+                <li class="filter-list" data-filter="lunch">Lunch</li>
+                <li class="filter-list" data-filter="fast_food">Fast Food</li>
+                <li class="filter-list" data-filter="salad">Salad</li>
+                <li class="filter-list" data-filter="deserts">Deserts</li>
+                <li class="filter-list" data-filter="drinks">Drinks</li>
+            </ul>
+        </div>
+
+        <!--menu-boxes-->
+        <div class="boxes">
+
+            <!--box1-->
+            <div class="menu-card fast_food">
+                <!--image-->
+                <div class="menu-image">
+                    <img src="image/burger.jpg" class="menu-image">
+                </div>
+                
+                <!--info-->
+                <div class="info">
+                    <h2>Burger</h2>
+                    <p>Description Here djd djc jdjdj jdjfnv jdjsisks jck ncjjd cjdd jjd jdd </p>
+                    <span>$20.00</span>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu-btn">Order Now</a>
+                </div>
+
+            
+            </div>
+
+            <!--box2-->
+            <div class="menu-card lunch">
+                <!--image-->
+                <div class="menu-image">
+                    <img src="image/pasta.jpg">
+                </div>
+                
+                <!--info-->
+                <div class="info">
+                    <h2>Pasta</h2>
+                    <p>Description Here djd djc jdjdj jdjfnv jdjsisks jck ncjjd cjdd jjd jdd </p>
+                    <span>$15.00</span>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu-btn">Order Now</a>
+                </div>
+            </div>
+
+            <!--box3-->
+            <div class="menu-card lunch">
+                <!--image-->
+                <div class="menu-image">
+                    <img src="image/lasagna.webp">
+                </div>
+                
+                <!--info-->
+                <div class="info">
+                    <h2>Lasagna</h2>
+                    <p>Description Here djd djc jdjdj jdjfnv jdjsisks jck ncjjd cjdd jjd jdd </p>
+                    <span>$50.00</span>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu-btn">Order Now</a>
+                </div>
+            </div>
+
+            <!--box4-->
+            <div class="menu-card lunch">
+                <!--image-->
+                <div class="menu-image">
+                    <img src="pictures/f4.jpg">
+                </div>
+                
+                <!--info-->
+                <div class="info">
+                    <h2>Snail + Plantain</h2>
+                    <p>Description Here djd djc jdjdj jdjfnv jdjsisks jck ncjjd cjdd jjd jdd </p>
+                    <span>$20.00</span>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu-btn">Order Now</a>
+                </div>
+            </div>
+
+            <!--box5-->
+            <div class="menu-card salad">
+                <!--image-->
+                <div class="menu-image">
+                    <img src="pictures/f5.jpg">
+                </div>
+        
+                <!--info-->
+                <div class="info">
+                    <h2>Salad</h2>
+                    <p>Description Here djd djc jdjdj jdjfnv jdjsisks jck ncjjd cjdd jjd jdd </p>
+                    <span>$20.00</span>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu-btn">Order Now</a>
+                </div>
+            </div>
+
+            <!--box6-->
+            <div class="menu-card lunch">
+                <!--image-->
+                <div class="menu-image">
+                    <img src="pictures/f6.jpg">
+                </div>
+                
+                <!--info-->
+                <div class="info">
+                    <h2>Wakye</h2>
+                    <p>Description Here djd djc jdjdj jdjfnv jdjsisks jck ncjjd cjdd jjd jdd </p>
+                    <span>$40.00</span>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu-btn">Order Now</a>
+                </div>
+            </div>
+
+            <!--box7-->
+            <div class="menu-card drinks">
+                <!--image-->
+                <div class="menu-image">
+                    <img src="image/chocolate_Drink.jpg">
+                </div>
+                
+                <!--info-->
+                <div class="info">
+                    <h2>Drink</h2>
+                    <p>Description Here djd djc jdjdj jdjfnv jdjsisks jck ncjjd cjdd jjd jdd </p>
+                    <span>$50.00</span>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu-btn">Order Now</a>
+                </div>
+            </div>
+
+            <!--box8-->
+            <div class="menu-card fast_food">
+                <!--image-->
+                <div class="menu-image">
+                    <img src="image/pizza.jpg">
+                </div>
+                
+                <!--info-->
+                <div class="info">
+                    <h2>pizza</h2>
+                    <p>Description Here djd djc jdjdj jdjfnv jdjsisks jck ncjjd cjdd jjd jdd </p>
+                    <span>$20.00</span>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu-btn">Order Now</a>
+                </div>
+            </div>
+
+            <!--box9-->
+            <div class="menu-card drinks">
+                <!--image-->
+                <div class="menu-image">
+                    <img src="image/juse.jpg">
+                </div>
+                
+                <!--info-->
+                <div class="info">
+                    <h2>Cocktail</h2>
+                    <p>Description Here djd djc jdjdj jdjfnv jdjsisks jck ncjjd cjdd jjd jdd </p>
+                    <span>$20.00</span>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu-btn">Order Now</a>
+                </div>
+            </div>
+
+            <!--box10-->
+            <div class="menu-card lunch">
+                <!--image-->
+                <div class="menu-image">
+                    <img src="pictures/f11.jpg">
+                </div>
+                
+                <!--info-->
+                <div class="info">
+                    <h2>Telibor/Amala</h2>
+                    <p>Description Here djd djc jdjdj jdjfnv jdjsisks jck ncjjd cjdd jjd jdd </p>
+                    <span>$20.00</span>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu-btn">Description</a>
+                </div>
+            </div>
+
+            <!--box12-->
+            <div class="menu-card fast_food">
+                <!--image-->
+                <div class="menu-image">
+                    <img src="image/Hot_dog.jpg">
+                </div>
+              
+                <!--info-->
+                <div class="info">
+                    <h2>pizza</h2>
+                    <p>Description Here djd djc jdjdj jdjfnv jdjsisks jck ncjjd cjdd jjd jdd </p>
+                    <span>$20.00</span>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu-btn">more</a>
+                </div>
+            </div>
+
+            <!--box13-->
+            <div class="menu-card deserts">
+                <!--image-->
+                <div class="menu-image">
+                    <img src="image/chocolate.jpg">
+                </div>
+                
+                <!--info-->
+                <div class="info">
+                    <h2>chocolate</h2>
+                    <p>Description Here djd djc jdjdj jdjfnv jdjsisks jck ncjjd cjdd jjd jdd </p>
+                    <span>$20.00</span>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu-btn">Order Now</a>
+                </div>
+            </div>
+
+            <!--box14-->
+            <div class="menu-card deserts">
+                <!--image-->
+                <div class="menu-image">
+                    <img src="image/ice_cream.jpg">
+                </div>
+          
+                <!--info-->
+                <div class="info">
+                    <h2>Ice Cream</h2>
+                    <p>Description Here djd djc jdjdj jdjfnv jdjsisks jck ncjjd cjdd jjd jdd </p>
+                    <span>$20.00</span>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu-btn">Order Now</a>
+                </div>
+            </div>
+
+            <!--box15-->
+            <div class="menu-card deserts">
+                <!--image-->
+                <div class="menu-image">
+                    <img src="image/Spanchi.jpg">
+                </div>
+                
+                <!--info-->
+                <div class="info">
+                    <h2>Spanchi</h2>
+                    <p>Description Here djd djc jdjdj jdjfnv jdjsisks jck ncjjd cjdd jjd jdd </p>
+                    <span>$20.00</span>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu-btn">Order Now</a>
+                </div>
+            </div>
+
+            <!--box16-->
+            <div class="menu-card fast_food">
+                <!--image-->
+                <div class="menu-image">
+                    <img src="image/sandwich.jpg">
+                </div>
+                
+                <!--info-->
+                <div class="info">
+                    <h2>sandwich</h2>
+                    <p>Description Here djd djc jdjdj jdjfnv jdjsisks jck ncjjd cjdd jjd jdd </p>
+                    <span>$20.00</span>
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu-btn">Order Now</a>
+                </div>
+            </div>   
+        </div>
+    </section><!--end-menu-->
+
+
+    <!--galery-->
+    <section class="galery" id="galery">
+        <!--title-->
+        <div class="title">
+            <h1><span>Galery</span></h1>
+        </div>
+
+        <!--galery boxes-->
+        <div class="boxes">
+
+            <!--box1-->
+            <div class="galery-img-box">
+                <div class="galery-image">
+                     <!--image-->
+                    <img src="image/galery_1.jpg">
+                    <!--title-->
+                    <h3>Food</h3>
+                    <!--description-->
+                    <p>Description Here djd djc jdjdj jdjfnv jdjsisks jck ncjjd cjdd jjd jdd</p>
+                    <!--button-->
+                    <a href="#" class="galery-btn">Order Now</a>
+                </div>
+            </div>
+
+            <!--box2-->
+            <div class="galery-img-box">
+                <div class="galery-image">
+                    <!--image-->
+                    <img src="image/galery_2.jpg">
+                    <!--title-->
+                    <h3>Food</h3>
+                    <!--description-->
+                    <p>Description Here djd djc jdjdj jdjfnv jdjsisks jck ncjjd cjdd jjd jdd</p>
+                    <!--button-->
+                    <a href="#" class="galery-btn">Order Now</a>
+                </div>
+            </div>
+
+            <!--box3-->
+            <div class="galery-img-box">
+                <div class="galery-image">
+                    <!--image-->
+                    <img src="image/galery_3.jpg">
+                    <!--title-->
+                    <h3>Food</h3>
+                    <!--description-->
+                    <p>Description Here djd djc jdjdj jdjfnv jdjsisks jck ncjjd cjdd jjd jdd</p>
+                    <!--button-->
+                    <a href="#" class="galery-btn">Order Now</a>        
+                </div>
+            </div>
+
+            <!--box4-->
+            <div class="galery-img-box">
+                <div class="galery-image">
+                    <!--image-->
+                    <img src="image/galery_4.jpg">
+                    <!--title-->
+                    <h3>Food</h3>
+                    <!--description-->
+                    <p>Description Here djd djc jdjdj jdjfnv jdjsisks jck ncjjd cjdd jjd jdd</p>
+                    <!--button-->
+                    <a href="#" class="galery-btn">Order Now</a>
+                </div>
+            </div>
+
+            <!--box5-->
+            <div class="galery-img-box">
+                <div class="galery-image">
+                    <!--image-->
+                    <img src="image/galery_5.jpg">
+                    <!--title-->
+                    <h3>Food</h3>
+                    <!--description-->
+                    <p>Description Here djd djc jdjdj jdjfnv jdjsisks jck ncjjd cjdd jjd jdd</p>
+                    <!--button-->
+                    <a href="#" class="galery-btn">Order Now</a>
+                </div>
+            </div>
+
+            <!--box6-->
+            <div class="galery-img-box">
+                <div class="galery-image">
+                    <!--image-->
+                    <img src="image/galery_6.jpg">
+                    <!--title-->
+                    <h3>Food</h3>
+                    <!--description-->
+                    <p>Description Here djd djc jdjdj jdjfnv jdjsisks jck ncjjd cjdd jjd jdd</p>
+                    <!--button-->
+                    <a href="#" class="galery-btn">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </section><!--galery end-->
+
+
+    <!--review-->
+    <section class="review" id="review">
+        <!--title-->
+        <div class="title">
+            <h1><span> Customer Review</span></h1>
+        </div>
+
+        <!--boxes-->
+        <div class="review-boxes">
+
+            <!--box1-->
+            <div class="review-card">
+                <!--image-->
+                <div class="review-profile">
+                    <img src="image/review_1.png">
+                </div>
+                <!--text-->
+                <div class="review-text">
+                    <h2>Marie Smith</h2>
+                    <!--icons-->
+                    <div class="review-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <!--social-->
+                    <div class="review-social">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <!--description-->
+                    <p>
+                        bd dvjdkdk dkdlslf kflfkff ksfllsk koskdmf lflsskfmkfjkf dflkkf mfkf lskk;s fjffkk lsfkps;
+                        lkfldl lsjosf haid isjfs kfoow ojsos ksffpw owpeew </p>
+                </div>
+            </div>
+
+            <!--box2-->
+            <div class="review-card">
+                <!--image-->
+                <div class="review-profile">
+                    <img src="image/review_2.png">
+                </div>
+                <!--text-->
+                <div class="review-text">
+                    <h2>Jack </h2>
+                    <!--icons-->
+                    <div class="review-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <!--social-->
+                    <div class="review-social">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <!--description-->
+                    <p>
+                        bd dvjdkdk dkdlslf kflfkff ksfllsk koskdmf lflsskfmkfjkf dflkkf mfkf lskk;s fjffkk lsfkps;
+                        lkfldl lsjosf haid isjfs kfoow ojsos ksffpw owpeew </p>
+                </div>
+            </div>
+
+            <!--box3-->
+            <div class="review-card">
+                <!--image-->
+                <div class="review-profile">
+                    <img src="image/review_3.png">
+                </div>
+                <!--text-->
+                <div class="review-text">
+                    <h2>Marie Smith</h2>
+                    <!--icons-->
+                    <div class="review-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <!--social-->
+                    <div class="review-social">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <!--description-->
+                    <p>
+                        bd dvjdkdk dkdlslf kflfkff ksfllsk koskdmf lflsskfmkfjkf dflkkf mfkf lskk;s fjffkk lsfkps;
+                        lkfldl lsjosf haid isjfs kfoow ojsos ksffpw owpeew </p>
+                </div>
+            </div>
+
+            <!--box4-->
+            <div class="review-card">
+                <!--image-->
+                <div class="review-profile">
+                    <img src="image/review_4.png">
+                </div>
+                <!--text-->
+                <div class="review-text">
+                    <h2>Marie Smith</h2>
+                    <!--icons-->
+                    <div class="review-icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <!--social-->
+                    <div class="review-social">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <!--description-->
+                    <p>
+                        bd dvjdkdk dkdlslf kflfkff ksfllsk koskdmf lflsskfmkfjkf dflkkf mfkf lskk;s fjffkk lsfkps;
+                        lkfldl lsjosf haid isjfs kfoow ojsos ksffpw owpeew </p>
+                </div>
+            </div>
+        </div>
+    </section><!--review end-->
+
+
+    <!--order-->
+    <section class="order" id="order">
+        <!--title-->
+        <div class="title">
+            <h1><span>Order Now</span></h1>
+        </div>
+
+        <!--order-main-->
+        <div class="order-main">
+            <!--order-img-->
+            <div class="order-image">
+                <img src="image/order_image.png">
+            </div>
+
+            <form action="#">
+
+                <div class="input">
+                    <p>Name</p>
+                    <input type="text" placeholder="name">
+                </div>
+
+                <div class="input">
+                    <p>Email</p>
+                    <input type="email" placeholder="Email">
+                </div>
+
+                <div class="input">
+                    <p>Number</p>
+                    <input placeholder="Phone Number">
+                </div>
+
+                <div class="input">
+                    <p>How many</p>
+                    <input type="number" placeholder="How many order">
+                </div>
+
+                <div class="input">
+                    <p>Your order</p>
+                    <input placeholder="food name">
+                </div>
+
+                <div class="input">
+                    <p>Address</p>
+                    <input placeholder="Address">
+                </div>
+
+                <a href="#" class="order-btn">Order Now</a>
+            </form>
+        </div>
+
+    </section><!--order end-->
+
+
+    <!--team-->
+    <section class="team" id="team">
+        <!--title-->
+        <div class="title">
+            <h1><span>Team</span></h1>
+        </div>
+
+        <!--boxes-->
+        <div class="team-box">
+            <!--box1-->
+            <div class="profile">
+                <img src="image/chef1.png">
+
+                <!--info-->
+                <div class="info">
+                    <h2 class="name">Chef</h2>
+                    <p class="bio">bd dvjdkdk dkdlslf kflfkff ksfllsk koskdmf lflsskfmkfjkf dflkk</p>
+
+                    <div class="team-icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!--box2-->
+            <div class="profile">
+                <img src="image/chef2.png">
+
+                <!--info-->
+                <div class="info">
+                    <h2 class="name">Chef</h2>
+                    <p class="bio">bd dvjdkdk dkdlslf kflfkff ksfllsk koskdmf lflsskfmkfjkf dflkk</p>
+
+                    <div class="team-icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!--box3-->
+            <div class="profile">
+                <img src="image/chef3.jpg">
+
+                <!--info-->
+                <div class="info">
+                    <h2 class="name">Chef</h2>
+                    <p class="bio">bd dvjdkdk dkdlslf kflfkff ksfllsk koskdmf lflsskfmkfjkf dflkk</p>
+
+                    <div class="team-icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!--box4-->
+            <div class="profile">
+                <img src="image/chef4.jpg">
+
+                <!--info-->
+                <div class="info">
+                    <h2 class="name">Chef</h2>
+                    <p class="bio">bd dvjdkdk dkdlslf kflfkff ksfllsk koskdmf lflsskfmkfjkf dflkk</p>
+
+                    <div class="team-icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--chef end-->
+
+
+    <!--footer-->
+    <footer>
+        <div class="footer" id="contact">
+            <div class="footer-tag">
+                <h3>Location</h3>
+                <p>USA</p>
+                <p>Ghana</p>
+                <p>Japan</p>
+                <p>Germany</p>
+            </div>
+
+            <div class="footer-tag">
+                <h3>Quick Link</h3>
+                <p>Home</p>
+                <p>About</p>
+                <p>Menu</p>
+                <p>Galery</p>
+                <p>Order</p>
+            </div>
+
+            <div class="footer-tag">
+                <h3>Contact</h3>
+                <p>+233 20 367 0484</p>
+                <p>+233 55 053 1044</p>
+                <p>cotrelecoffi@gmail.com</p>
+            </div>
+
+            <div class="footer-tag">
+                <h3>Services</h3>
+                <p>fast Delivery</p>
+                <p>Easy Payments</p>
+                <p>24/7 Services</p>
+            </div>
+
+            <div class="footer-tag">
+                <h3>Follow us</h3>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div>
+
+        <p class="end">Designed by <span><i class="fa-solid fa-face-grin"></i> Mahuena Coffi</span></p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <!--Jquery-->
+    <script src="js/jquery-3.7.1.js"></script>
+    
+    <script>
+        /*filter-link-active*/
+var selector = '.filter-list li';
+
+$(selector).on('click', function(){
+    $(selector).removeClass('active')
+    $(this).addClass('active')
+});
+/*box-filter*/
+$(document).ready(function(){
+    $('.filter-list li').click(function(){
+        const value = $(this).attr('data-filter');
+        if(value == 'all'){
+            $('.menu-card').show('100');
+        }
+        else{
+            $('.menu-card').not('.' +value).hide('1000');
+            $('.menu-card').filter('.' +value).show('1000');
+        }
+    });
+});
+
+
+function myFunction() {
+    var content1 = document.getElementById('content1');
+  
+    if(content1.style.display === "none") {
+    content1.style.display = "block";
+  }else {
+    content1.style.display = "none";
+  }
+};
+    </script>
+</body>
+</html>
